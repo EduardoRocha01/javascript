@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+        .formato{
+            height: 19px;
+            width: 215px;
+            margin: auto;
+            padding: auto;
+            font-family: 'Lobster';
+            font-size: 25px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            text-align: start;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.548);
+            background-color: beige;
+            position: relative;
+            top: 50px;
+            padding: 21px;
+
+            border-radius: 20px;
+            box-shadow: inset 5px 5px 5px black;
+            border: solid black;
+            background-color: rgba(0, 0, 255, 0.349);
+            color: aliceblue;
+        }
+        .formato2{
+            height: 50px;
+            width: 500px;
+            margin: auto;
+            padding: auto;
+            font-family: 'Lobster';
+            font-size: 25px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            text-align: start;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.548);
+            background-color: beige;
+            position: relative;
+            padding: 21px;
+            position: relative;
+            top: 59px;
+
+            border-radius: 20px;
+            box-shadow: inset 5px 5px 5px black;
+            border: solid black;
+            background-color: rgba(0, 0, 255, 0.349);
+            color: aliceblue;
+        }
+        
+        mark{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+ 
+  <script>
+    var nome = window.prompt('qual seu nome ? ')
+    document.write(`<h2 class='formato'>seu nome tem ${nome.length} letras <br> </h2>`)
+    document.write(`<p class='formato2'> ${nome} seu nome em letras maisculas é assim <mark>${nome.toUpperCase()}</mark></p>`)
+  </script>
+</body>
+</html>

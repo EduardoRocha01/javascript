@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu primeiro programa</title>
+    <style>
+
+        body{
+            background-color: rgb(225, 225, 238);
+            color: rgb(17, 16, 16);
+            text-align: center;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        section{
+            background-color: rgb(190, 178, 178);
+            padding: 5px;
+            margin: 5px;
+            border: 5px solid rgb(78, 78, 90);
+            height: 314px;
+            width: 400px;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: inset 5px 5px 5px black;
+        }
+         
+
+        p{
+            margin-top: -50px;
+            background-color: rgb(124, 139, 151);
+            border-radius: 30px;
+            box-shadow:  inset 5px 5px 5px rgb(59, 58, 58);
+            border: solid white;
+            font-weight: bold;
+
+            margin-left: 4px;
+            
+        }
+        
+        h1{
+           color: rgb(228, 228, 228);
+           font-weight: bold;
+           text-shadow: 30px  black;
+        }
+    </style>
+</head>
+<body>
+   
+    <section>
+        <h1>ola mundo</h1>
+        <p>me livrei da maldição</p>
+    </section>
+    <script>
+       var n1 =  Number.parseFloat(window.prompt('Digite um numero: '))
+       var n2 = Number.parseFloat(window.prompt('Digite um  outro numero: '))
+       var s = n1+n2
+
+        window.alert(`a soma de ${n1} + ${n2} é ${s}`)
+
+    </script> 
+</body>
+</html>
