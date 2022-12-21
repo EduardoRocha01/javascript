@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+    <style>
+
+        #resultado1{
+            height: 50px;
+            width: 200px;
+            background-color: aliceblue;
+            border: solid black;
+            position: relative;
+            top: 5px;
+            left: 50px;
+            border-radius: 20px;
+            line-height: 50px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        #botão{
+            height: 40px;
+            width: 60px;
+            background-color: greenyellow;
+            font-weight: bold;
+            box-shadow: 5px 5px 5px black;
+        }
+
+        h1{
+            height: 70px;
+            width: 250px;
+            background-color: green;
+            color: white;
+            text-shadow: 5px 5px 5px black;
+            border: solid black;
+            line-height: 70px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+
+    <input type="number"  nome="textn1 " id="textn1">
+    <input type="number" nome="textn1" id="textn2">
+    <input type="button" id="botão" value="Somar" onclick="somar()" onmouseout="novo()">
+
+    <div id="resultado1">resultado aqui !!</div>
+<script>
+   var b  = document.getElementById('botão')
+    
+    function somar(){
+        var n1 = document.getElementById('textn1')
+        var n2 = document.getElementById('textn2')
+        var t1 = parseInt(n1.value) 
+        var t2 = parseInt(n2.value) 
+        var resultado = t1 + t2
+
+        
+        var nr = (document.getElementById('resultado1'))
+
+        
+
+        b.style.color = 'red'
+        b.style.backgroundColor = 'blue'
+
+        nr.innerHTML = `A soma entre ${t1} e ${t2} e ${resultado}`
+    }
+
+        function novo(){
+            b.style.backgroundColor = 'black'
+        }
+</script>
+    
+</body>
+</html>
