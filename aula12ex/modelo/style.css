@@ -1,0 +1,26 @@
+body{
+   background:rgb(71, 142, 201);
+   font: normal 15pt arial;
+}
+
+header{
+
+}
+
+section{
+   background-color: white;
+   width: 500px;
+   padding: 10px;
+   border-radius: 10px;
+   margin: auto;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.514);
+}
+
+footer{
+   font-style: italic;
+}
+
+.rodaheader{
+    color:white;
+    text-align: center;
+}

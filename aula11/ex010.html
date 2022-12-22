@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAM</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        h1{
+            text-shadow: 10px 10px 10px black;
+            border: solid rgb(88, 35, 35);
+            width: 250px;
+        }
+
+        h2{
+            position: relative;
+            top: -20px ;
+            text-shadow: 10px 10px 10px black;
+        }
+
+        #p1{
+            position: relative;
+            left: 180px ;
+            top: -85px;
+        }
+
+       #txtvel{
+            left: 120px;
+            text-align: center;
+        } 
+
+        #botão{
+            position: relative;
+            left:120px ;
+            top: -95px ;
+            font-weight: bold;
+            border-color: rgb(109, 33, 33);
+            box-shadow: 5px 5px 5px rgb(82, 64, 64);
+        }
+
+        #quadro{
+            width: 350px;
+            height: 150px;
+            background-color: rgb(226, 209, 209);
+            position: relative;
+            top:-90px;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 5px 5px 5px black;
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+        }
+    </style>
+</head>
+<body> <!--HTML5-->
+    <h1>Sistemas de multa</h1>
+
+    <input type="number" name="txtvel" id="txtvel">
+
+    <h2>velocidade</h2>
+    <p id="p1">Km/h</p>
+
+    <input type="button" id="botão" value="verificar" onclick="calcular()">
+    <div id="quadro"></div>
+
+    <!--javaScript-->
+     <script>
+        function calcular(){
+            var res = document.querySelector('div#quadro')
+            var txt = document.querySelector('input#txtvel')
+            var vel = parseFloat(txt.value)
+
+            res.innerHTML=`<p>Sua velocidade atual é  ${vel} Km/h</p>`
+            if (vel > 60){
+                res.innerHTML += `<p>VOCE ESTA <strong> MULTADO</strong> POR EXECESO DE VELOCIDADE</p>`
+            }
+            res.innerHTML +=`<p>dirija com sinto de <strong>segurança</strong></p>`
+
+        }
+     </script>
+</body>
+</html>
