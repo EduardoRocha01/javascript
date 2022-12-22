@@ -1,23 +1,25 @@
 function carregar(){
     var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('imagem')
+    var foto = window.document.getElementById('imagem')
+    var min = new Date()
+    var minuto= min.getMinutes()
+    var data= new Date()
+    var hora=data.getHours()
 
-    var data = new Date()
-    //var hora = data.getHours()
-    var hora = 5
-
-    msg.innerHTML = `agora são ${hora} horas.`
-
-    if(hora>=0 && hora < 12){
-        //bom dia
-       img.innerHTML.src = './imagem/manha.png'
-    }else if(hora >=12 && hora <= 18){
-        //BOA TARDE
+    msg.innerHTML=`Agora são ${hora} horas e ${minuto} minutos`
     
-    }else {
-        //BOA NOITE
-    
-
+    if(hora>=5&& hora<=12){
+        //manha
+        foto.setAttribute('src','manha.png')
+    }else if(hora>=13 && hora<=18){
+        //tarde
+        foto.setAttribute('src','tarde.png')
+        
+    }else{
+        //noite
+        foto.setAttribute('src','noite.png')
     }
+
+   
 }
 
